@@ -21,3 +21,15 @@ C:\Users\marco\OneDrive\Desktop\NetMarket\integracion4\Back\Core\obj\Debug\net5.
 C:\Users\marco\OneDrive\Desktop\NetMarket\integracion4\Back\Core\obj\Debug\net5.0\Core.dll
 C:\Users\marco\OneDrive\Desktop\NetMarket\integracion4\Back\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\marco\OneDrive\Desktop\NetMarket\integracion4\Back\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\bin\Debug\net5.0\Core.dll
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.dll
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\Core\obj\Debug\net5.0\Core.pdb

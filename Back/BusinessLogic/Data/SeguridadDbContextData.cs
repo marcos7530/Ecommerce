@@ -19,6 +19,7 @@ namespace BusinessLogic.Data
                     Nombre = "Marcos",
                     Apellido = "Campos",
                     UserName = "Marcos",
+                    Email = "marcoscampos.dev@gmail.com",
                     Direccion = new Direccion
                     {
                         Calle = "Isabel la Catolica 2682",
@@ -34,13 +35,14 @@ namespace BusinessLogic.Data
             }
 
 
-            //if (!roleManager.Roles.Any()) {
-            //    var role = new IdentityRole
-            //    {
-            //        Name = "ADMIN"
-            //    };
-            //    await roleManager.CreateAsync(role);
-            //}
+            if (!roleManager.Roles.Any())
+            {
+                var role = new IdentityRole
+                {
+                    Name = "ADMIN"
+                };
+                await roleManager.CreateAsync(role);
+            }
 
 
         }

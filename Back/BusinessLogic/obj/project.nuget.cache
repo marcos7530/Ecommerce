@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EQ9Uj+mnRDwBFggplOf3KaTWhIAiFqcehqM4Addwo5A0AhaBR27SHZRU9lCNUhpbyaoOLpIB2jmdM68UlwOsdQ==",
+  "dgSpecHash": "D+TYZ6ExG54ZSRc+X/Mjle9HzteI0zp6zRma8eEWoIWcfLIrFy+3qQN9rpwsY3dC+sudyCn/PxUcux1dIvK5Ng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marco\\OneDrive\\Desktop\\NetMarket\\integracion4\\Back\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\marco\\OneDrive\\Documentos\\GitHub\\Ecommerce\\Back\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

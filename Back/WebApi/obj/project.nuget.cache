@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UinkxoaqnBxmSYuXvuJZqhBnpnL6qVEtbNJ65hMr5dTCR2cygAON7ItpW8mJOFM3OZOy6h9s8lIhks2qU7UAzQ==",
+  "dgSpecHash": "o76df133PNqYQcWSWIke1HJ3iEB4R0gKi59qjTnJAydJHuAo5qZ8f0K1pfXEjcTzsU9QitPvQlCZ9ooIfxmB0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marco\\OneDrive\\Desktop\\NetMarket\\integracion4\\Back\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\marco\\OneDrive\\Documentos\\GitHub\\Ecommerce\\Back\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

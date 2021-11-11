@@ -48,6 +48,7 @@ namespace WebApi.Controllers
                 return Unauthorized(new CodeErrorResponse(401));
             }
 
+          // // aqui es don de compran el mail y el password
             var resultado = await _signInManager.CheckPasswordSignInAsync(usuario, loginDto.Password, false);
 
             if (!resultado.Succeeded)
@@ -62,7 +63,7 @@ namespace WebApi.Controllers
                 Id = usuario.Id,
                 Email = usuario.Email,
                 Username = usuario.UserName,
-                Token = _tokenService.CreateToken(usuario, roles),
+                Token = "este es el token",//_tokenService.CreateToken(usuario, roles),
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Imagen = usuario.Imagen,
@@ -104,7 +105,7 @@ namespace WebApi.Controllers
 
         }
 
-      
+
         [Authorize]
         [HttpPut("actualizar/{id}")]
         public async Task<ActionResult<UsuarioDto>> Actualizar(string id, RegistrarDto registrarDto)
@@ -119,7 +120,8 @@ namespace WebApi.Controllers
             usuario.Apellido = registrarDto.Apellido;
             usuario.Imagen = registrarDto.Imagen;
 
-            if (!string.IsNullOrEmpty(registrarDto.Password)) {
+            if (!string.IsNullOrEmpty(registrarDto.Password))
+            {
                 usuario.PasswordHash = _passwordHasher.HashPassword(usuario, registrarDto.Password);
             }
 
@@ -139,14 +141,14 @@ namespace WebApi.Controllers
                 Apellido = usuario.Apellido,
                 Email = usuario.Email,
                 Username = usuario.UserName,
-                Token = _tokenService.CreateToken(usuario, roles ),
+                Token = _tokenService.CreateToken(usuario, roles),
                 Imagen = usuario.Imagen,
                 Admin = roles.Contains("ADMIN") ? true : false
-                
+
             };
         }
 
-        
+
         [Authorize(Roles = "ADMIN")]
         [HttpGet("pagination")]
         public async Task<ActionResult<Pagination<UsuarioDto>>> GetUsuarios([FromQuery] UsuarioSpecificationParams usuarioParams)
@@ -163,8 +165,8 @@ namespace WebApi.Controllers
             var data = _mapper.Map<IReadOnlyList<Usuario>, IReadOnlyList<UsuarioDto>>(usuarios);
 
             return Ok(
-                new Pagination<UsuarioDto> 
-                { 
+                new Pagination<UsuarioDto>
+                {
                     Count = totalUsuarios,
                     Data = data,
                     PageCount = totalPages,
@@ -174,17 +176,20 @@ namespace WebApi.Controllers
              );
         }
 
-        
+
         [Authorize(Roles = "ADMIN")]
         [HttpPut("role/{id}")]
-        public async Task<ActionResult<UsuarioDto>> UpdateRole(string id, RoleDto roleParam) {
+        public async Task<ActionResult<UsuarioDto>> UpdateRole(string id, RoleDto roleParam)
+        {
             var role = await _roleManager.FindByNameAsync(roleParam.Nombre);
-            if (role == null) {
+            if (role == null)
+            {
                 return NotFound(new CodeErrorResponse(404, "El role no existe"));
             }
 
             var usuario = await _userManager.FindByIdAsync(id);
-            if (usuario == null) {
+            if (usuario == null)
+            {
                 return NotFound(new CodeErrorResponse(404, "El usuario no existe"));
             }
 
@@ -208,34 +213,39 @@ namespace WebApi.Controllers
                     }
                 }
             }
-            else {
+            else
+            {
 
                 var resultado = await _userManager.RemoveFromRoleAsync(usuario, roleParam.Nombre);
-                if (resultado.Succeeded) {
+                if (resultado.Succeeded)
+                {
                     usuarioDto.Admin = false;
                 }
             }
 
-           
+
             if (usuarioDto.Admin)
             {
                 var roles = new List<string>();
                 roles.Add("ADMIN");
                 usuarioDto.Token = _tokenService.CreateToken(usuario, roles);
             }
-            else {
+            else
+            {
                 usuarioDto.Token = _tokenService.CreateToken(usuario, null);
             }
-          
+
             return usuarioDto;
         }
 
 
         [Authorize(Roles = "ADMIN")]
         [HttpGet("account/{id}")]
-        public async Task<ActionResult<UsuarioDto>> GetUsuarioBy(string id) {
+        public async Task<ActionResult<UsuarioDto>> GetUsuarioBy(string id)
+        {
             var usuario = await _userManager.FindByIdAsync(id);
-            if (usuario == null) {
+            if (usuario == null)
+            {
                 return NotFound(new CodeErrorResponse(404, "el usuario no existe"));
             }
 
@@ -243,7 +253,7 @@ namespace WebApi.Controllers
 
             return new UsuarioDto
             {
-               Id = usuario.Id,
+                Id = usuario.Id,
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Email = usuario.Email,
@@ -251,7 +261,7 @@ namespace WebApi.Controllers
                 Imagen = usuario.Imagen,
                 Admin = roles.Contains("ADMIN") ? true : false
             };
-            
+
         }
 
 
@@ -264,15 +274,15 @@ namespace WebApi.Controllers
             var roles = await _userManager.GetRolesAsync(usuario);
 
             return new UsuarioDto
-                {
+            {
                 Id = usuario.Id,
                 Nombre = usuario.Nombre,
-                    Apellido = usuario.Apellido,
-                    Email = usuario.Email,
-                    Username = usuario.UserName,
-                    Imagen = usuario.Imagen,
-                    Token = _tokenService.CreateToken(usuario, roles),
-                    Admin = roles.Contains("ADMIN") ? true : false
+                Apellido = usuario.Apellido,
+                Email = usuario.Email,
+                Username = usuario.UserName,
+                Imagen = usuario.Imagen,
+                Token = _tokenService.CreateToken(usuario, roles),
+                Admin = roles.Contains("ADMIN") ? true : false
             };
         }
 
