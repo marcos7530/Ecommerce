@@ -1,0 +1,65 @@
+[
+  {
+    "Nombre": "Sofá esquinero",
+    "Descripcion": "ancho: 2.45 , prof:0.90 , parte esquinera 1.50 ",
+    "Stock": 100,
+    "MarcaId": 1,
+    "CategoriaId": 1,
+    "Precio": 110000,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Mesa",
+    "Descripcion": "1.60x0.80 patas torneadas, PINO MISIONERO, lustre color negro, c/6 sillas vestidas chenille rayado. ",
+    "Stock": 600,
+    "MarcaId": 2,
+    "CategoriaId": 2,
+    "Precio": 82000,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Conjunto sommier SUAVEGOM",
+    "Descripcion": "1.60x1.90 Línea Resortes,  alta densidad, tela matelase.",
+    "Stock": 500,
+    "MarcaId": 3,
+    "CategoriaId": 3,
+    "Precio": 67900,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Butaca matera c/apoyabrazo",
+    "Descripcion": "0.80 ancho, 0.80 prof, chenille rayado natural, estructura pino misionero.",
+    "Stock": 1000,
+    "MarcaId": 2,
+    "CategoriaId": 4,
+    "Precio": 13000,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Mesa provenzal",
+    "Descripcion": "1.20x0.80 pino misionero, lustre color cedro c/4 sillas tablita tapizadas chenille micro gris.",
+    "Stock": 600,
+    "MarcaId": 2,
+    "CategoriaId": 2,
+    "Precio": 50000,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Mesa",
+    "Descripcion": "1.40x1.40 pino misionero patas rectas c/6 sillas vestidas rayadas chenille natural.",
+    "Stock": 200,
+    "MarcaId": 2,
+    "CategoriaId": 2,
+    "Precio": 9700,
+    "Imagen": ""
+  },
+  {
+    "Nombre": "Mesa Ratona",
+    "Descripcion": "exagonal patas torneadas c/vidrio, pino misionero, lustre color cedro, 1.00mts diàmetro.",
+    "Stock": 200,
+    "MarcaId": 2,
+    "CategoriaId": 2,
+    "Precio": 13000,
+    "Imagen": ""
+  }
+]
