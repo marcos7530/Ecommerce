@@ -50,3 +50,4 @@ C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\BusinessLogic\obj\Debug
 C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\BusinessLogic\obj\Debug\net5.0\ref\BusinessLogic.dll
 C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\BusinessLogic\obj\Debug\net5.0\BusinessLogic.pdb
 C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\BusinessLogic\obj\Debug\net5.0\BusinessLogic.genruntimeconfig.cache
+C:\Users\marco\OneDrive\Documentos\GitHub\Ecommerce\Back\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CopyComplete

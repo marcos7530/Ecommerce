@@ -53,6 +53,8 @@ const AgregarProducto = (props) => {
         
         const resultado = await registrarProducto(producto);
 
+        
+
         props.history.push("/admin/listaProductos");
 
     }

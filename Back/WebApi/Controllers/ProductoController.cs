@@ -66,7 +66,7 @@ namespace WebApi.Controllers
         }
 
         
-        [Authorize(Roles = "ADMIN")]
+       [Authorize(Roles = "ADMIN")]//
         [HttpPost]
         public async Task<ActionResult<Producto>> Post(Producto producto) {
             var resultado = await _productoRepository.Add(producto);
@@ -78,7 +78,7 @@ namespace WebApi.Controllers
         }
 
 
-        [Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]//
         [HttpPut("{id}")]
         public async Task<ActionResult<Producto>> Put(int id, Producto producto) {
             producto.Id = id;

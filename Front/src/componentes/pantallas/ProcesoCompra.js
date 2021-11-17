@@ -67,15 +67,10 @@ const ProcesoCompra = (props) => {
                             }}
                             />
                         </Grid>
-                        <Grid item xs={12}>
-                            <TextField
-                            label="Pais"
-                            fullWidth
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                            />
-                        </Grid>
+
+
+                       
+                         
                         <Grid item xs={12}>
                             <Button
                             variant="contained"
@@ -101,9 +96,15 @@ const ProcesoCompra = (props) => {
                                     </FormLabel>
                                     <RadioGroup>
                                         <FormControlLabel 
-                                        value="PayPal" 
+                                        value="Tarjeta" 
                                         control={<Radio color="primary"/>}
-                                        label="PayPal o Tarjeta"/> 
+                                        label="Tarjeta"/> 
+                                    </RadioGroup>
+                                    <RadioGroup>
+                                        <FormControlLabel 
+                                        value="Efectivo" 
+                                        control={<Radio color="primary"/>}
+                                        label="Efectivo"/> 
                                     </RadioGroup>
                                 </FormControl>
                             </Grid>
@@ -133,14 +134,14 @@ const ProcesoCompra = (props) => {
                             ENVIO
                         </Typography>
                         <Typography >
-                            Direccion: Calle 2, Cali, Colombia
+                            Direccion: R9 km 1269 Mancopa, leales
                         </Typography>
                         <Divider className={classes.divider}/>
                         <Typography variant="h6" className={classes.text_title}>
                             METODO DE PAGO
                         </Typography>
                         <Typography>
-                            Metodo: PayPal
+                            Metodo: Tarjeta
                         </Typography>
                         <Divider className={classes.divider}/>
                         <Typography variant="h6" className={classes.text_title}>
@@ -159,12 +160,12 @@ const ProcesoCompra = (props) => {
                                         </TableCell>
                                         <TableCell>
                                             <Typography className={classes.text_detalle}>
-                                                Abrigo Vaxi Moda 2020
+                                            Butaca matera c/apoyabrazo
                                             </Typography>
                                         </TableCell>
                                         <TableCell>
                                             <Typography className={classes.text_detalle}>
-                                                2 x $25.00 = $50.00
+                                                2 x $13000 = $26000
                                             </Typography>
                                         </TableCell>
                                     </TableRow>
@@ -199,7 +200,7 @@ const ProcesoCompra = (props) => {
                                         </TableCell>
                                         <TableCell>
                                             <Typography className={classes.text_detalle}>
-                                                $50.00
+                                                $26000
                                             </Typography>
                                         </TableCell>
                                     </TableRow>
@@ -211,21 +212,12 @@ const ProcesoCompra = (props) => {
                                         </TableCell>
                                         <TableCell>
                                             <Typography className={classes.text_detalle}>
-                                                $2.00
+                                                $1000
                                             </Typography>
                                         </TableCell>
                                     </TableRow>
                                     <TableRow>
-                                        <TableCell>
-                                            <Typography className={classes.text_title}>
-                                                Impuesto
-                                            </Typography>
-                                        </TableCell>
-                                        <TableCell>
-                                            <Typography className={classes.text_detalle}>
-                                                $8.00
-                                            </Typography>
-                                        </TableCell>
+                                       
                                     </TableRow>
                                     <TableRow>
                                         <TableCell>
@@ -235,7 +227,7 @@ const ProcesoCompra = (props) => {
                                         </TableCell>
                                         <TableCell>
                                             <Typography className={classes.text_detalle}>
-                                                $60.00
+                                                $27000
                                             </Typography>
                                         </TableCell>
                                     </TableRow>

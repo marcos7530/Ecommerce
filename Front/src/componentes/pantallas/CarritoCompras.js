@@ -57,7 +57,7 @@ const CarritoCompras = (props) => {
                                 </TableCell>
                                 <TableCell>
                                     <Typography className={classes.text_detalle}>
-                                        ${item.cantidad}
+                                        {item.cantidad}
                                     </Typography>
                                 </TableCell>
                                 <TableCell>

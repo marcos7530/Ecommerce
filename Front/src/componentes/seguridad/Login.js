@@ -39,7 +39,7 @@ const Login = (props) => {
   const loginEventoUsuario = () => {
     loginUsuario(usuario, dispatch).then((response) => {
       if (response.status === 200) {
-        window.localStorage.setItem("token", response.data.token);
+        window.localStorage.setItem("token", response.data.token);/////////
         props.history.push("/");
       } else {
         dispatch({

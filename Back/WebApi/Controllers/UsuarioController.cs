@@ -27,7 +27,12 @@ namespace WebApi.Controllers
         private readonly IPasswordHasher<Usuario> _passwordHasher;
         private readonly IGenericSeguridadRepository<Usuario> _seguridadRepository;
         private readonly RoleManager<IdentityRole> _roleManager;
-        public UsuarioController(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager, ITokenService tokenService, IMapper mapper, IPasswordHasher<Usuario> passwordHasher, IGenericSeguridadRepository<Usuario> seguridadRepository, RoleManager<IdentityRole> roleManager)
+        public UsuarioController(UserManager<Usuario> userManager,
+            SignInManager<Usuario> signInManager,
+            ITokenService tokenService, IMapper mapper, 
+            IPasswordHasher<Usuario> passwordHasher,
+            IGenericSeguridadRepository<Usuario> seguridadRepository,
+            RoleManager<IdentityRole> roleManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -63,7 +68,7 @@ namespace WebApi.Controllers
                 Id = usuario.Id,
                 Email = usuario.Email,
                 Username = usuario.UserName,
-                Token = "este es el token",//_tokenService.CreateToken(usuario, roles),
+                Token = _tokenService.CreateToken(usuario, roles),
                 Nombre = usuario.Nombre,
                 Apellido = usuario.Apellido,
                 Imagen = usuario.Imagen,
